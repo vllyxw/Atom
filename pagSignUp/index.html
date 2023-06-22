@@ -5,26 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Entrar</title>
+    <title>Seja Bem-vindo!</title>
 </head>
 <body>
 
-    <div class="container">
-        <div class="container-login">
-
-            <img style="width: 125px; margin-top: 20px;" src="logoAtom.png">
-
-            <button class="button-google">
-                <img style="width: 22px;" src="logoGoogle.png">
-                &nbsp;&nbsp;&nbsp;&nbsp;Entrar com Google
-            </button>
-            <br>
-            <p class="p-container-login">ENTRAR COM <a href="">E-MAIL</a> OU <a href="">USUÁRIO</a></p>
-            
+    <div class="box">
+        <div class="img-box">
+            <img src="imageLogin.png">
         </div>
-        <div class="container-login-image">
-            <img style="width: 375px; margin-top: 100px;" src="imageLogin.png" >
+        <div class="form-box">
+            <h2>Criar Conta</h2>
+            <p>Já é um Membro? <a href="#">Login</a></p>
+            <form action="#">
+
+                <div class="input-group">
+                    <label for="nome">Nome Completo: </label>
+                    <input type="text" id="nome" placeholder="Digite o seu Nome Completo" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">E-mail: </label>
+                    <input type="email" id="email" placeholder="Digite o seu E-mail" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="telefone">Telefone: </label>
+                    <input type="tel" id="telefone" placeholder="Digite o seu Telefone" required>
+                </div>
+
+                <div class="input-group w50">
+                    <label for="senha">Senha: </label>
+                    <input type="password" id="senha" placeholder="Digite a sua Senha" required>
+                </div>
+
+                <div class="input-group w50">
+                    <label for="confirmarsenha">Confirmar Senha: </label>
+                    <input type="password" id="confirmasenha" placeholder="Confirme a senha Senha" required>
+                </div>
+
+                <div class="input-group">
+                    <button>Cadastrar</button>
+                </div>
+
+            </form>
         </div>
     </div>
+
 </body>
 </html>
