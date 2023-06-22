@@ -34,6 +34,16 @@
     <div id="menuDestinos">
         <nav>
             <ul>
+                <form>
+                    <label for="latitude">Latitude:</label>
+                    <input type="text" id="latitude" name="latitude" readonly>
+                    <br>
+                    <label for="longitude">Longitude:</label>
+                    <input type="text" id="longitude" name="longitude" readonly>
+                    <br>
+                    <button type="button" onclick="obterLocalizacao()">Obter Localização</button>
+                    <button type="submit">Enviar</button>
+                  </form>
                 <li>Origem</li>
                 <li>Destinos</li>
                 <li>Partida/Retorno</li>
@@ -111,7 +121,7 @@
 
 </footer>
 
-    
+    <script src="script.js"></script>
 </body>
 
 </html>
