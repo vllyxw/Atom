@@ -28,7 +28,7 @@ fieldset
     width: 1000px;
     height: auto;
     padding: 10px;
-
+    
     box-shadow: 0px 0px 5px #666;
     -webkit-box-shadow: 0px 0px 5px #666;
     -moz-box-shadow: 0px 0px 5px #666;
@@ -56,8 +56,9 @@ fieldset
 }
 #img-roteiro
 {
-    width: 50%;
-    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media screen and (max-width: 768px) {
     
@@ -70,14 +71,18 @@ p
 {
     font-size: 15px;
 }
-
-.box-text-img
-{
-    display: flex;   
-}
 #id-navio
 {
     font-size: 12px;
+    display: flex;
+}
+#id-cruzeiro
+{
+    display: flex;
+}
+#id-roteiro
+{
+    display: flex;
 }
 h1, h2
 {
@@ -96,4 +101,85 @@ h1, h2
     color: #ffff;
     width: 270px;
     height: 30px;
+}
+#but-confirmar:hover
+{
+    background-color: #08336e;
+    border: #1B55A6;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #ffff;
+    width: 270px;
+    height: 30px;
+}
+#container-box
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.box-opcao
+{
+    margin: 12px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #ffff;
+    border-color: #1B55A6;
+    border-radius: 3px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 60px;
+}
+.icons
+{
+    padding: 3px;
+    width: 30px;
+}
+.w50{
+    width: 50%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-login
+{
+    background-color: #ffff;
+    border-color: #1B55A6;
+    border-radius: 3px;
+    width: 450px;
+    height: 40px;
+    margin: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+#div-button-login
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nomeCompleto
+{
+    width: 500px;
+    height: 25px;
+    margin: 10px;
+    text-align: center;
+}
+.div-nome-completo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    padding: 12px;
 }

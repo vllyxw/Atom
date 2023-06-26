@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <img src="../img/logoAtom.png" style="width: 140px;">
+
+<div class="box">
+
+    <fieldset>
+
+        <legend id="legenda">Dados do Comprador</legend>
+
+        <h1><b>Como prefere comprar?</b></h1>
+
+        <div id="div-button-login">
+        <button class="button-login w50"><b>Cadastre-se</b></button>
+        <button class="button-login w50"><b>Faça seu Login</b></button>
+        </div>
+
+        <input type="radio" id="notifica" name="notifica" value="notifica">
+        <label for="Quero receber outras ofertas, promoçoes exclusivas, cupons e novidades por e-mail">Quero receber outras ofertas, promoções exclusivas, cupons e novidades por e-mail</label>
+
+        <div class="row"></div>
+        <h1>Responsável pelo Check-in</h1>
+
+        <form action="">
+
+        <div class="div-nome-completo">
+        <label>Nome completo do responsável da Cabine | Cruzeiro Internacional Rio de Janeiro á Dubai</label>
+        <input type="text" id="nomeCompleto" placeholder="Nome Completo" required>
+    </div>
+
+        <div class="row"></div>  
+        
+        <div id="container-box">
+            <button class="box-opcao">
+                <img class="icons" src="../img/iconCartaocredito.png">
+                Cartão de Crédito
+            </button>
+            <button class="box-opcao">
+                <img class="icons" src="../img/iconPix.png">
+                Pix
+            </button>
+            <button class="box-opcao">
+                <img class="icons" src="../img/iconPayPal.png">
+                PayPal
+            </button>
+        </div>
+
+        <input type="radio" id="estrangeiro" name="estrangeiro" value="estrangeiro">
+        <label for="Nao sou Brasileiro">Não sou Brasileiro</label>
+
+        <br><br>
+
+        <label>Número do cartão de crédito:</label>
+        <input type="text" id="nomectcr" required>
+
+        <label>Nome impresso no cartão:</label>
+        <input type="text" id="nomeimct" required>
+
+        <label>Validade:</label>
+        <input type="date" id="validade" required>
+
+        <label>Cód. Segurança:</label>
+        <input type="text" id="codseguranca" required>
+
+        <label>Número de Parcelas:</label>
+        <input type="text" id="parcelas" required>
+
+        <label>CPF:</label>
+        <input type="text" id="cpf" required>
+
+        <label>Data de Nascimento</label>
+        <input type="date" id="datanasc" required>
+
+        <label>Celular:</label>
+        <input type="telefone" id="cel" required>
+
+        </form>
+
+        <a href="check.html"><button id="but-confirmar">Finalizar Compra</button></a>
+
+
+    </fieldset>
+
+</div>
+
+</body>
+</html>
