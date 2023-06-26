@@ -1,0 +1,47 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+.row
+{
+    width: auto;
+    height: 3px;
+    background-color: #1B55A6;
+    margin: 8px;
+}
+fieldset
+{
+    /*margin: 50px;*/
+    width: 1000px;
+    height: auto;
+    padding: 10px;
+}
+@media screen and (max-width: 768px)
+{
+    fieldset{
+        width: auto;
+        height: auto;
+        margin: 35px;
+        padding: 5px;
+    }
+
+}
+#img-roteiro
+{
+    width: 50%;
+}
+@media screen and (max-width: 768px) {
+    
+    #img-roteiro{
+        width: 100%;
+    }
+
+}
