@@ -1,126 +1,193 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <title>Início</title>
 </head>
 
 <body>
 
+  <header>
 
-<header>
- <section class="parteInicio">
+    <section class="parteInicio">
 
-    <div id="barraDeNavegacao">
-          <nav>
-            <ul>
-                <li>Início</li>
-                <li>Pacotes</li>
-                <li>Hotéis</li>
-                <li>Resorts</li>
-                <li>Cruzeiros</li>
-                <li>Promoções</li>
-                <li>Entrar</li>
-            </ul>
-          </nav>
-        </div>
-
-    <div id="fraseCentroLandingPage">
-             <h1>O mundo a um click de distância</h1>
-    </div>
-
-    <div id="menuDestinos">
+      <div id="barraDeNavegacao">
         <nav>
-            <ul>
-                <select name="destino" id="destino">
-                    <option value="">Caribe</option>
-                    <option value="">Mediterrâneo</option>
-                    <option value="">Norte da Europa</option>
-                    <option value="">América do Sul</option>
-                    <option value="">Volta ao mundo</option>
-                    <option value="">Travessias</option>
-                    <option value="">Dubai e Emirados Árabes Unidos</option>
-                </select>
-                <li>Origem</li>
-                <li>Destinos</li>
-                <li>Partida/Retorno</li>
-                <li>1 adulto</li>
-                <button><li>Pesquisa</li></button>
-            </ul>
+          <ul>
+            <li>Início</li>
+            <li>Destinos</li>
+            <li>Viajando com a Atom</li>
+            <li>Cruzeiros</li>
+            <li>Promoções</li>
+            <li>Entrar</li>
+          </ul>
         </nav>
-    </div>
+      </div>
 
-</section>
 
-</header>
 
-<section class="partePromocoes">
 
-    <div id="promocoesNcional">
-        <h3>Promoções Nacional</h3>
-    </div>
+      <div id="fraseCentroLandingPage">
+        <h1>O mundo a um click de distância</h1>
+      </div>
 
-    <div>
-        <h3>Promoções Internacionais</h3>
-    </div>
 
-    <div>
-        <h3>Pacotes All Inclusive</h3>
-    </div>
 
-</section>
 
-<section class="destinos">
+      <div id="menuDestinos">
+
+
+        <button id="destino"> Aonde você quer ir? <br>
+          <select name="destino" id="select-destino">
+
+            <option value="selecione-destino">Selecione o destino</option>
+            <option value="caribe">Caribe</option>
+            <option value="mediterraneo">Mediterrâneo</option>
+            <option value="norte-da-europa">Norte da Europa</option>
+            <option value="america-do-sul">América do Sul</option>
+            <option value="volta-ao-mundo">Volta ao mundo</option>
+            <option value="travessia">Travessias</option>
+            <option value="dubai-e-emirados">Dubai e Emirados Árabes Unidos</option>
+
+          </select>
+        </button>
+
+
+        <button id="partida">Quando? <br>
+          <input type="date">
+        </button>
+
+
+        <button id="origem"> Saindo de onde? <br>
+          <select name="destino" id="select-origem">
+
+            <option value="selecione-origem">Selecione a origem</option>
+            <option value="santos">Santos - Brasil</option>
+            <option value="itajai">Itajaí - Brasil</option>
+            <option value="rio-de-janeiro">Rio de Janeiro - Brasil</option>
+            <option value="salvador">Salvador - Brasil</option>
+            <option value="abu-dhabi">Abu Dhabi - Emirados Árabes Unidos</option>
+            <option value="amsterda">Amsterdã - Países Baixos</option>
+            <option value="atenas">Atenas - Grécia</option>
+            <option value="barcelona">Barcelona - Espanha</option>
+            <option value="bari">Bari - Itália</option>
+            <option value="bremerhaven">Bremerhaven - Alemanha</option>
+            <option value="buenos-aires">Buenos Aires - Argentina</option>
+            <option value="cagliari">Cagliari - Itália</option>
+            <option value="catania">Catânia - Itália</option>
+            <option value="roma">Roma - Itália</option>
+            <option value="copenhague">Copenhague - Dinamarca</option>
+            <option value="dubai">Dubai - Emirados Árabes Unidos</option>
+            <option value="fortaleza">Fortaleza - Brasil</option>
+            <option value="gibraltar">Gibraltar - Gibraltar</option>
+            <option value="guadalupe">Guadalupe - Guadalupe</option>
+            <option value="genova">Gênova - Itália</option>
+            <option value="hamburgo">Hamburgo - Alemanha</option>
+            <option value="istambul">Istambul - Turquia</option>
+            <option value="kiel">Kiel - Alemanha</option>
+            <option value="lisboa">Lisboa - Portugal</option>
+            <option value="marselha">Marselha - França</option>
+            <option value="massina">Massina - Itália</option>
+            <option value="montevideu">Montevidéu - Uruguai</option>
+            <option value="napoles">Nápoles - Itália</option>
+            <option value="palma">Palma - Espanha</option>
+            <option value="recife">Recife - Brasil</option>
+            <option value="santo-domingo">Santo Domingo - República Dominicana</option>
+            <option value="tarragona">Tarragona - Espanha</option>
+            <option value="toulon">Toulon - França</option>
+            <option value="valencia">Valência - Espanha</option>
+
+          </select>
+        </button>
+
+        <button id="hospedes"> Quantos hóspedes? <br>
+          <label for="input">Adultos <br> (14+) </label><input type="number" min="1" max="5">
+          <label for="input">Crianças <br> (0-13) </label><input type="number" min="1" max="5">
+        </button>
+
+        <button type="submit">
+          Buscar
+        </button>
+
+
+      </div>
+    </section>
+  </header>
+
+<main>
+  <section class="partePromocoes">
+
+    
+      <h3>Promoções</h3>
+      <p>Para você não perder nenhuma oferta ou novidade</p>
+   
+
+    
+
+  </section>
+
+  <section class="destinos">
 
     <h2>Destinos</h2>
 
     <div id="imagens"></div>
-</section>
 
-<footer>
+  </section>
+
+</main>
+
+
+  <footer>
 
     <section class="rodape">
 
-          <div id="sobreNos">
-            <ul>
-              <li>Sobre Nós</li>
-              <li>Quem Somos</li>
-              <li>Trabalhe Conosco</li>
-              <li>Transparência Atom</li>
-              <li>Atom Fidelidade</li>
-            </ul>
-          </div>
+      <div id="sobreNos">
+        <ul>
+          <li>Sobre Nós</li>
+          <li>Quem Somos</li>
+          <li>Trabalhe Conosco</li>
+          <li>Transparência Atom</li>
+          <li>Atom Fidelidade</li>
+        </ul>
+      </div>
 
-          <div id="viajeComAGente">
-             <ul>
-                <li>Viaje com a gente</li>
-                <li>Pacotes</li>
-                <li>Hotéis</li>
-                <li>Resorts</li>
-                <li>Cruzeiros</li>
-                <li>Passeios</li>
-                <li>Promoções</li>
-                <li>Explore nossos destinos</li>
-             </ul>
-          </div>
+      <div id="viajeComAGente">
+        <ul>
+        <li>Viaje com a gente</li>
+        <li>Pacotes</li>
+        <li>Hotéis</li>
+        <li>Resorts</li>
+        <li>Cruzeiros</li>
+        <li>Passeios</li>
+        <li>Promoções</li>
+        <li>Explore nossos destinos</li>
+        </ul>
+      </div>
 
-          <div id="faleConosco">
-            <ul>
-                <li>Fale Conosco</li>
-                <li>Central de Ajuda</li>
-                <li>Política de Privacidade</li>
-                <li>Política de Cookies</li>
-                <li>Termos de Uso</li> 
-            </ul>
-          </div>
+      <div id="faleConosco">
+        <ul>
+          <li>Fale Conosco</li>
+          <li>Central de Ajuda</li>
+          <li>Política de Privacidade</li>
+          <li>Política de Cookies</li>
+          <li>Termos de Uso</li>
 
+        </ul>
+      </div>
     </section>
 
-</footer>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
+
 </body>
+
+
+
 
 </html>
