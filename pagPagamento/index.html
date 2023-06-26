@@ -8,15 +8,22 @@
 </head>
 <body>
     
+    <img src="../img/logoAtom.png" style="width: 140px;">
+
 <div class="box">
 
     <fieldset>
 
-        <img id="img-roteiro" src="../img/cruzeiroDubai.jpg">
-        <img style="width: 35px;" src="../img/iconCruzeiro.png"><p id="id-cruzeiro">Cruzeiro Internacional</p>
-        <p id="id-roteiro"><b>Rio de Janeiro + Barcelona + Safaga + Aqaba + Dubai</b></p>
-        <p id="id-navio">MSC Favalosa</p>
+        <legend id="legenda">Dados da Viagem</legend>
 
+        <div class="box-text-img">
+        <img id="img-roteiro" src="../img/cruzeiroDubai.jpg">
+            <img style="width: 45px; height: 32px; padding: 10px;" src="../img/iconCruzeiro.png"><p id="id-cruzeiro">Cruzeiro Internacional</p>
+            <p id="id-roteiro"><b>Rio de Janeiro + Barcelona + Safaga + Aqaba + Dubai</b></p>
+            <p id="id-navio">MSC Favalosa</p>
+        </div>
+
+        <div class="box-dados"></div>
         <div class="row"></div>
         <h1>Saída:</h1><h2>14/04/2023</h2>
         <h1>Chegada:</h1><h2>06/05/2023</h2>
@@ -33,7 +40,7 @@
         <input type="text" id="cupom" placeholder="Digite o Cupom aqui!">
 
         <div class="row"></div>
-        <h1><b>Total:</b></h1><h2><b>R$13.867,00</b></h2>
+        <h1 id="total-txt"><b>Total:</b></h1><h2><b id="valor-txt" >R$13.867,00</b></h2>
 
         <button id="but-confirmar">Confirmar</button>
 

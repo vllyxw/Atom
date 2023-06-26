@@ -5,10 +5,12 @@
 }
 body
 {
+    padding: 30px;
     justify-content: center;
     align-items: center;
     display: flex;
     font-family: 'Poppins', sans-serif;
+    flex-direction: column;
 }
 .row
 {
@@ -19,10 +21,17 @@ body
 }
 fieldset
 {
+    background-color: #ffff;
+    border-color: #1B55A6;
+    border-radius: 10px;
     /*margin: 50px;*/
     width: 1000px;
     height: auto;
     padding: 10px;
+
+    box-shadow: 0px 0px 5px #666;
+    -webkit-box-shadow: 0px 0px 5px #666;
+    -moz-box-shadow: 0px 0px 5px #666;
 }
 @media screen and (max-width: 768px)
 {
@@ -34,9 +43,21 @@ fieldset
     }
 
 }
+#legenda
+{
+    border: 1px solid #1B55A6;
+    padding: 7px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1B55A6;
+    border-radius: 8px;
+    color: #ffff;
+}
 #img-roteiro
 {
     width: 50%;
+    float: left;
 }
 @media screen and (max-width: 768px) {
     
@@ -44,4 +65,35 @@ fieldset
         width: 100%;
     }
 
+}
+p 
+{
+    font-size: 15px;
+}
+
+.box-text-img
+{
+    display: flex;   
+}
+#id-navio
+{
+    font-size: 12px;
+}
+h1, h2
+{
+ font-size: 17px;
+}
+#total-txt, #valor-txt
+{
+    font-size: 22px;
+}
+#but-confirmar
+{
+    background-color: #1B55A6;
+    border: #1B55A6;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #ffff;
+    width: 270px;
+    height: 30px;
 }
