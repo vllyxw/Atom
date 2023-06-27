@@ -173,6 +173,7 @@ h1, h2
     height: 25px;
     margin: 10px;
     text-align: center;
+    border-color: #1B55A6;
 }
 .div-nome-completo
 {
@@ -182,4 +183,27 @@ h1, h2
     flex-direction: column;
     font-size: 15px;
     padding: 12px;
+}
+.form-box
+{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 50%;
+    float: left;
+}
+.form-box2
+{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.input-box
+{
+    margin: 5px;
+    width: 300px;
+    height: 25px;
+    border-color: #1B55A6;
 }
