@@ -134,6 +134,15 @@ h1, h2
     width: 160px;
     height: 60px;
 }
+@media screen and (max-width:768px){
+    #container-box
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
 .icons
 {
     padding: 3px;
@@ -145,6 +154,12 @@ h1, h2
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media (max-width:768px) {
+    .w50{
+        width: 100%;
+        padding: 0;
+    }
 }
 .button-login
 {
@@ -203,4 +218,10 @@ h1, h2
     width: 300px;
     height: 25px;
     border-color: #1B55A6;
+}
+#form-dados
+{
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
