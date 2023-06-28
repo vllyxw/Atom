@@ -149,14 +149,21 @@ button {
 
 #hospedes {
     width: 290px;
-    height: 90px;
+    height: 80px;
     background: #fff;
     border: none;
     border-radius: 10px;
+    padding-bottom: 5px;
 }
 
 #hospedes label {
     font-size: 14px;
+}
+
+#hospedes input {
+    width: 45px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -182,13 +189,35 @@ button {
 
 main {
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     background-color: azure;
     position: relative;
     padding: 0 5%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+h3 {
+    
+    margin-top: -500px;
+}
+
+.carousel-inner {
+    margin-top: 20px;
+    width: 800px;
+}
+
+.carousel-inner img {
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.carousel-inner img:hover {
+    -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 
