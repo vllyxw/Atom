@@ -23,8 +23,10 @@
         <button class="button-login w50"><b>Faça seu Login</b></button>
         </div>
 
+        <div id="notificao">
         <input type="radio" id="notifica" name="notifica" value="notifica">
-        <label for="Quero receber outras ofertas, promoçoes exclusivas, cupons e novidades por e-mail">Quero receber outras ofertas, promoções exclusivas, cupons e novidades por e-mail</label>
+        <label for="Quero receber outras ofertas, promoçoes exclusivas, cupons e novidades por e-mail" id="notifica">Quero receber outras ofertas, promoções exclusivas, cupons e novidades por e-mail</label>
+        </div>
 
         <div class="row"></div>
         <h1>Responsável pelo Check-in</h1>
@@ -58,41 +60,39 @@
 
         <br><br>
 
-        <div id="form-dados">
+        <div id="form-box">
+            <div class="form-box-primary w50">
 
-        <div class="form-box">
+                <label>Número do cartão de crédito:</label>
+                <input type="text" id="nmct" class="input-box" required>
 
-        <label>Número do cartão de crédito:</label>
-        <input type="text" id="nomectcr" class="input-box" required>
+                <label>Nome impresso no cartão:</label>
+                <input type="text" id="nomect" class="input-box" required>
 
-        <label>Nome impresso no cartão:</label>
-        <input type="text" id="nomeimct" class="input-box" required>
+                <label>Validade:</label>
+                <input type="date" id="validade" class="input-box" required>
 
-        <label>Validade:</label>
-        <input type="date" id="validade" class="input-box" required>
+                <label>Cód. Segurança:</label>
+                <input type="text" id="codseguranca" class="input-box" required>
 
-        <label>Cód. Segurança:</label>
-        <input type="text" id="codseguranca" class="input-box" required>
+            </div>
 
-    </div>
+            <div class="form-box-second w50-rigth">
 
-    <div class="form-box2">
+                <label>Número de Parcelas:</label>
+                <input type="text" id="parcelas" class="input-box" required>
+                
+                <label>CPF:</label>
+                <input type="text" id="cpf" class="input-box" required>
 
-        <label>Número de Parcelas:</label>
-        <input type="text" id="parcelas" class="input-box" required>
-        
-        <label>CPF:</label>
-        <input type="text" id="cpf" class="input-box" required>
+                <label>Data de Nascimento</label>
+                <input type="date" id="datanasc" class="input-box" required>
 
-        <label>Data de Nascimento</label>
-        <input type="date" id="datanasc" class="input-box" required>
+                <label>Celular:</label>
+                <input type="telefone" id="cel" class="input-box" required>
 
-        <label>Celular:</label>
-        <input type="telefone" id="cel" class="input-box" required>
-
-    </div>
-
-</div>
+            </div>
+        </div>
 
         </form>
 
