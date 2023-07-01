@@ -12,15 +12,16 @@
   <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <!--SCRIPTS-->
-  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <!--FONT AWESOME-->
   <script src="https://kit.fontawesome.com/2d3a534489.js" crossorigin="anonymous"></script>
   <!--PROGRESS BAR-->
   <script src="../pagInicio/js/progressbar.min.js"></script>
-  <!--PARALLAX-->
-  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 
   <title>Início</title>
 </head>
@@ -29,199 +30,216 @@
 
   <header>
 
-   <div class="hero">
+    <div class="hero">
 
       <video autoplay loop muted plays-inline class="back-video">
         <source src="../videos/video.mp4" type="video/mp4">
       </video>
 
-        <nav>
-          <ul>
-            <img src="../img/logoAtom.png" style="width: 100px;">
-            <li>Início</li>
-            <li>Destinos</li>
-            <li>Viajando com a Atom</li>
-            <li>Cruzeiros</li>
-            <li>Promoções</li>
-            <li>Entrar</li>
-          </ul>
-        </nav>
+      <nav>
+        <ul>
+          <img src="../img/logoAtom.png" style="width: 110px;">
+          <li>Início</li>
+          <li>Destinos</li>
+          <li>Viajando com a Atom</li>
+          <li>Cruzeiros</li>
+          <li>Promoções</li>
+          <li>Entrar</li>
+        </ul>
+      </nav>
 
-        <div class="content">
-          <h1>O mundo a um click de distância</h1>
+      <section class="content">
+        <h1>O mundo a um click de distância</h1>
 
-          <div id="menuDestinos">
+        <div class="book-form">
+          <form action="#">
+            <div class="inputBox">
+              <span>Aonde você quer ir?</span>
+              <input type="text" placeholder="Destino">
+            </div>
 
-            <button id="destino"> Aonde você quer ir? <br>
-              <select name="destino" id="select-destino">
-    
-                <option value="selecione-destino">Selecione o destino</option>
-                <option value="caribe">Caribe</option>
-                <option value="mediterraneo">Mediterrâneo</option>
-                <option value="norte-da-europa">Norte da Europa</option>
-                <option value="america-do-sul">América do Sul</option>
-                <option value="volta-ao-mundo">Volta ao mundo</option>
-                <option value="travessia">Travessias</option>
-                <option value="dubai-e-emirados">Dubai e Emirados Árabes Unidos</option>
-    
-              </select>
-            </button>
-    
-    
-            <button id="partida">Quando? <br>
+            <div class="inputBox">
+              <span>Quando?</span>
               <input type="date">
-            </button>
-    
-    
-            <button id="origem"> Saindo de onde? <br>
-              <select name="destino" id="select-origem">
-    
-                <option value="selecione-origem">Selecione a origem</option>
-                <option value="santos">Santos - Brasil</option>
-                <option value="itajai">Itajaí - Brasil</option>
-                <option value="rio-de-janeiro">Rio de Janeiro - Brasil</option>
-                <option value="salvador">Salvador - Brasil</option>
-                <option value="abu-dhabi">Abu Dhabi - Emirados Árabes Unidos</option>
-                <option value="amsterda">Amsterdã - Países Baixos</option>
-                <option value="atenas">Atenas - Grécia</option>
-                <option value="barcelona">Barcelona - Espanha</option>
-                <option value="bari">Bari - Itália</option>
-                <option value="bremerhaven">Bremerhaven - Alemanha</option>
-                <option value="buenos-aires">Buenos Aires - Argentina</option>
-                <option value="cagliari">Cagliari - Itália</option>
-                <option value="catania">Catânia - Itália</option>
-                <option value="roma">Roma - Itália</option>
-                <option value="copenhague">Copenhague - Dinamarca</option>
-                <option value="dubai">Dubai - Emirados Árabes Unidos</option>
-                <option value="fortaleza">Fortaleza - Brasil</option>
-                <option value="gibraltar">Gibraltar - Gibraltar</option>
-                <option value="guadalupe">Guadalupe - Guadalupe</option>
-                <option value="genova">Gênova - Itália</option>
-                <option value="hamburgo">Hamburgo - Alemanha</option>
-                <option value="istambul">Istambul - Turquia</option>
-                <option value="kiel">Kiel - Alemanha</option>
-                <option value="lisboa">Lisboa - Portugal</option>
-                <option value="marselha">Marselha - França</option>
-                <option value="massina">Massina - Itália</option>
-                <option value="montevideu">Montevidéu - Uruguai</option>
-                <option value="napoles">Nápoles - Itália</option>
-                <option value="palma">Palma - Espanha</option>
-                <option value="recife">Recife - Brasil</option>
-                <option value="santo-domingo">Santo Domingo - República Dominicana</option>
-                <option value="tarragona">Tarragona - Espanha</option>
-                <option value="toulon">Toulon - França</option>
-                <option value="valencia">Valência - Espanha</option>
-    
-              </select>
-            </button>
-    
-            <button id="hospedes"> Quantos hóspedes? <br>
-              <label for="input">Adultos <br> (14+) </label><input type="number" min="1" max="5">
-              <label for="input">Crianças <br> (0-13) </label><input type="number" min="1" max="5">
-            </button>
-    
-            <button id="enviar" type="submit">
-              Buscar
-            </button>
-    
-    
-          </div>
+            </div>
+
+            <div class="inputBox">
+              <span>Saindo de onde?</span>
+              <input type="text" placeholder="Local de saída">
+            </div>
+
+            <div class="inputBox">
+              <span>Quantos hóspedes?</span>
+              <input type="number" min="0" max="5">
+            </div>
+
+            <input type="submit" value="Buscar" class="btn">
+          </form>
         </div>
+      </section>
+    </div>
     </div>
 
     </section>
   </header>
 
-<main>
-  
+  <main>
 
-     
+
+    <section class="firstContent">
       <h3>Em evidência</h3>
       <p>Para você não perder nenhuma oferta ou novidade</p>
-     
-      
-   
+
       <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="../img/foto-1.jpg" class="d-block w-100" alt="..." >
+            <img src="../img/foto-1.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="../img/foto-2.jpg" class="d-block w-100" alt="..." >
+            <img src="../img/foto-2.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="../img/foto-3.jpg" class="d-block w-100" alt="..." >
+            <img src="../img/foto-3.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    
 
- 
+      <h3>Promoções</h3>
 
-
-
-    <h2>Destinos</h2>
-
-    <div id="imagens"></div>
-
- 
-
-</main>
+      <p>Cabine com varanda a preço de cabine externa ou de cabine interna*</p>
 
 
-  <footer>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
 
-    <section class="rodape">
+            <div class="card" style="width: 18rem;">
+              <img src="../img/salvador-bahia.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-text">Roteiro dos sonhos para uma viagem de cruzeiro</h4>
+                <h5 class="card-text">Embarcando em Salvador</h5>
+                <p class="card-text">Data do embarque <br> 03 de junho de 2024</p>
+                <p class="card-text">Preço por pessoa</p>
+                <p class="card-text" id="precoPassagem">R$2.503</p>
+                <P class="card-text">Tarifas marítimas, taxas de serviço e portuárias inclusas</P>
+              </div>
+            </div>
+          </div>
 
-      <div id="sobreNos">
-        <ul>
-          <li>Sobre Nós</li>
-          <li>Quem Somos</li>
-          <li>Trabalhe Conosco</li>
-          <li>Transparência Atom</li>
-          <li>Atom Fidelidade</li>
-        </ul>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="../img/salvador-bahia.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-text">Um roteiro para férias inesquecíveis</h4>
+                <h5 class="card-text">Embarcando em Santos</h5>
+                <p class="card-text">Data do embarque <br> 11 de dezembro de 2023</p>
+                <p class="card-text">Preço por pessoa</p>
+                <p class="card-text" id="precoPassagem">R$2.164</p>
+                <P class="card-text">Tarifas marítimas, taxas de serviço e portuárias inclusas</P>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="../img/salvador-bahia.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-text">Um roteiro para férias inesquecíveis</h4>
+                <h5 class="card-text">Embarcando em Santos</h5>
+                <p class="card-text">Data do embarque <br> 11 de dezembro de 2023</p>
+                <p class="card-text">Preço por pessoa</p>
+                <p class="card-text" id="precoPassagem">R$2.164</p>
+                <P class="card-text">Tarifas marítimas, taxas de serviço e portuárias inclusas</P>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div id="viajeComAGente">
-        <ul>
-        <li>Viaje com a gente</li>
-        <li>Pacotes</li>
-        <li>Hotéis</li>
-        <li>Resorts</li>
-        <li>Cruzeiros</li>
-        <li>Passeios</li>
-        <li>Promoções</li>
-        <li>Explore nossos destinos</li>
-        </ul>
+      <h3>Destinos que todo ama!</h3>
+      
+      <div class="gallery">
+        <img src="https://picsum.photos/id/1040/300/300" alt="a house on a mountain">
+        <img src="https://picsum.photos/id/106/300/300" alt="sime pink flowers">
+        <img src="https://picsum.photos/id/136/300/300" alt="big rocks with some trees">
+        <img src="https://picsum.photos/id/1039/300/300" alt="a waterfall, a lot of tree and a great view from the sky">
+        <img src="https://picsum.photos/id/110/300/300" alt="a cool landscape">
+        <img src="https://picsum.photos/id/1047/300/300" alt="inside a town between two big buildings">
+        <img src="https://picsum.photos/id/1057/300/300" alt="a great view of the sea above the mountain">
       </div>
 
-      <div id="faleConosco">
-        <ul>
-          <li>Fale Conosco</li>
-          <li>Central de Ajuda</li>
-          <li>Política de Privacidade</li>
-          <li>Política de Cookies</li>
-          <li>Termos de Uso</li>
 
-        </ul>
-      </div>
+
+
+
+
+
+
     </section>
 
-  </footer>
+  </main>
+
+
+
+<!--RODAPÉ-->
+ <footer>
+    <div class="footer-content">
+
+      <!--LOGO DA ATOM-->
+      <img src="../img/logoAtom.png" width="160px">
+       
+      <!--ÍCONES DAS REDES SOCIAIS-->
+      <div class="icons">
+        <a href="#"><i class="fa-brands fa-facebook" style="color: #003175;"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter" style="color: #003175;"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram" style="color: #003175;"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin" style="color: #003175;"></i></a>
+      </div>
+    </div>
+
+     <!--CONTEÚDO DO RODAPÉ-->
+    <div class="footer-content">
+      <h4>A Companhia</h4>
+      <li><a href="#">Sobre a Atom</a></li>
+      <li><a href="#">Trabalhe conosco</a></li>
+      <li><a href="#">Transparência Atom</a></li>
+      <li><a href="#">Atom fidelidade</a></li>
+    </div>
+
+    <div class="footer-content">
+      <h4>Links Úteis</h4>
+      <li><a href="#">Fale conosco</a></li>
+      <li><a href="#">Informações de viagem</a></li>
+      <li><a href="#">Formas de pagamento</a></li>
+      <li><a href="#">Seguro Viagem</a></li>
+    </div>
+
+    <div class="footer-content">
+      <h4>Informações Importantes</h4>
+      <li><a href="#">Política da privacidade</a></li>
+      <li><a href="#">Perguntas frequentes</a></li>
+      <li><a href="#">Requisitos sanitários para viajar</a></li>
+      <li><a href="#">Carta de direitos do passageiro</a></li>
+    </div>
+ </footer>
+
 
   <script src="../pagInicio/js/script.js"></script>
 
