@@ -1,264 +1,68 @@
-*
-{
+*{
     padding: 0;
     margin: 0;
-}
-body
-{
-    padding: 30px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    flex-direction: column;
 }
-.row
-{
-    width: auto;
-    height: 3px;
-    background-color: #1B55A6;
-    margin: 8px;
-}
-fieldset
-{
-    border-color: #1B55A6;
-    border-radius: 10px;
-    width: 1000px;
-    height: auto;
-    padding: 10px;
-    box-shadow: 0px 0px 20px #666;
-}
-#legenda
-{
-    border: 1px solid #1B55A6;
-    padding: 7px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #1B55A6;
-    border-radius: 8px;
-    color: #ffff;
-}
-#img-roteiro
-{
+body{
+    background-image: url(../img/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
 }
-p 
-{
+/* BOX PRINCIPAL */
+.box{
+    display: flex;
+    width: 930px;
+}
+.box-inform{
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(40px);
+    padding: 30px 40px;
+    width: 100%;
+    border-radius: 20px;
+}
+.box-inform h1{
+    font-size: 18px;
+}
+.box-inform h2{
+    font-size: 13px;
+    text-align: center;
+}
+.box-inform p{
+    font-weight: bold;
+    color: #3D3D3D;
+    font-size: 15px;
+
+}
+.box-inform p a{
+    color: #294159;
+    text-decoration: none;
     font-size: 15px;
 }
-#id-navio
-{
-    font-size: 12px;
-    display: flex;
-}
-#id-cruzeiro
+#img-box
 {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    border-radius: 20px;
 }
-#id-roteiro
+.desc-img
 {
+    justify-content: left;
     display: flex;
+    flex-direction: column;
 }
-h1, h2
-{
- font-size: 17px;
-}
-#total-txt, #valor-txt
-{
-    font-size: 22px;
-}
-#but-confirmar
-{
-    background-color: #1B55A6;
-    border: #1B55A6;
-    border-radius: 3px;
-    font-size: 14px;
-    color: #ffff;
-    width: 270px;
-    height: 30px;
-}
-#but-confirmar:hover
-{
-    background-color: #08336e;
-    border: #1B55A6;
-    border-radius: 3px;
-    font-size: 14px;
-    color: #ffff;
-    width: 270px;
-    height: 30px;
-}
-#container-box
+.desc-cruzeiro
 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.box-opcao
-{
-    margin: 12px;
-    margin-left: 30px;
-    margin-right: 30px;
-    border-color: #1B55A6;
-    border-radius: 3px;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 160px;
-    height: 60px;
-}
-.icons
-{
-    padding: 3px;
-    width: 30px;
-}
-.w50{
-    width: 50%;
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.button-login
-{
-    border-color: #1B55A6;
-    border-radius: 3px;
-    width: 450px;
-    height: 40px;
-    margin: 12px;
-    margin-left: 5px;
-    margin-right: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 13px;
-}
-#div-button-login
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-@media screen and (max-width: 900px) {
-
-    #div-button-login, .button-login{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-    }
-    .button-login{
-        background-color: #ffff;
-        border-color: #1B55A6;
-        border-radius: 3px;
-        width: 150px;
-        height: 40px;
-        margin: 12px;
-        margin-left: 5px;
-        margin-right: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 11px;
-    }
-    #notificao
-    {
-        padding: 2px;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        font-size: 8px;
-    }
-    #notifica
-    {
-        font-size: 10px;
-    }
-    .box-name
-    {
-        width: 200px;
-    }
-    .w50{
-        width: 100%;
-        padding: 0;
-    }
-    #container-box
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    #img-roteiro{
-        width: 100%;
-    }
-    fieldset{
-        width: auto;
-        height: auto;
-        margin: 35px;
-        padding: 5px;
-    }
-}
-#notificao
-{
-    padding: 2px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-size: 15px;
-}
-#notifica
-{
-    padding: 5px;
-}
-.box-name
-{
-    width: 500px;
-    height: 25px;
-    margin: 10px;
-    display: flex;
     text-align: center;
-    border-color: #1B55A6;
 }
-.div-nome-completo
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 15px;
-    padding: 12px;
-}
-#form-box
-{
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-.form-box-primary
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.form-box-second
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.input-box
-{
-    border-color: #1B55A6;
-    border-radius: 3px;
-    margin: 5px;
-    width: 200px;
-    height: 30px;
-}
+/* */
