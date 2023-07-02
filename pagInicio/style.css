@@ -26,6 +26,8 @@
 
 /*BARRA DE NAVEGAÇÃO*/
 
+
+
 nav {
     width: 100%;
     position: absolute;
@@ -56,10 +58,11 @@ nav li a {
 
 nav ul li:hover {
     background: transparent;
-    padding: 6px;
-    border-bottom: 3px solid #fff;
-    color: #fff;
+    border-bottom: 3px solid #003175;
+    transform: translateY(-5px);
 }
+
+/*DESTINOS*/
 
 .menu {
     display: grid;
@@ -74,8 +77,8 @@ nav ul li:hover {
 
 .dropdown-menu {
     position: absolute;
-    margin-top: 47%;
-    margin-left: -355%;
+    margin-top: 48%;
+    margin-left: -400%;
     width: 500px;
     height: 200px;
     border-radius: 15px;
@@ -91,6 +94,30 @@ nav ul li:hover {
 .dropdown:hover .dropdown-menu {
     display: inline-block;
 }
+
+/*VIAJANDO COM A ATOM*/
+
+.dropdown-atom {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: -126%;
+    width: 250px;
+    height: 200px;
+    border-radius: 15px;
+    background: #fff;
+    border: none;
+    display: none;
+}
+
+.dropdown-atom a {
+    display: block;
+    color: black;
+}
+
+.dropdown:hover .dropdown-atom {
+    display: inline-block;
+}
+
 
 /* CONTEÚDO DO HEADER */
 
