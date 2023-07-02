@@ -166,7 +166,7 @@ nav ul li:hover {
 
 main {
     width: 100%;
-    height: 400vh;
+    height: 600vh;
     background-color: #fff;
     position: relative;
     padding: 0 5%;
@@ -187,10 +187,11 @@ p {
 /*CARROSSEL*/
 
 .carousel-inner {
-    width: 1100px;
+    width: 1178px;
     height: 500px;
     margin-top: 20px;
-    margin-left: 65px;
+    margin-left: 29px;
+    border-radius: 15px;
 }
 
 .carousel-inner img {
@@ -207,8 +208,22 @@ p {
 
 /*CARDS*/
 
+.cartoes {
+    display: grid;
+    grid-template-columns: 18.6rem 18.6rem 18.6rem 18.6rem;
+    margin-bottom: -30px;
+}
 .card {
-    margin-left: 67px;
+    margin-left: 27px;
+    border-radius: 15px;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 3px grey;
+}
+
+.card img {
+    border-radius: 15px 15px 0px 0px;
 }
 
 h4 {
@@ -246,7 +261,7 @@ h5 {
 .imagem-mediterraneo h1 {
     color: #fff;
     font-weight: 600;
-    margin-left: 2%;
+    margin-left: 75%;
     margin-top: -60px;
     z-index: 2;
 }
@@ -256,13 +271,13 @@ h5 {
 }
 
 .imagens-diversas {
-    margin-top: 26px;
-    
+    margin-top: 28px;
+    margin-left: 22px;
     display: grid;
+    grid-template-columns: 400px 400px 400px;
 }
 
 .imagens-diversas img {
-    margin: px;
     border-radius: 15px;
 }
 
@@ -273,7 +288,7 @@ h5 {
 .caribe h1 {
     color: #fff;
     font-weight: 600;
-    margin-left: 21%;
+    margin-left: 61%;
     margin-top: -60px;
     z-index: 2;
 }
@@ -281,7 +296,7 @@ h5 {
 .brasil h1 {
     color: #fff;
     font-weight: 600;
-    margin-left: 20%;
+    margin-left: 65%;
     margin-top: -60px;
     z-index: 2;
 }
@@ -289,12 +304,19 @@ h5 {
 .ilhas-gregas h1 {
     color: #fff;
     font-weight: 600;
-    margin-left: 11%;
+    margin-left: 33%;
     margin-top: -60px;
     z-index: 2;
 }
 
+/*ÍCONES PARTES O QUE TEM TODO CRUZEIRO*/
 
+.incluso-cruzeiro {
+    display: grid;
+    grid-template-columns: 313px 313px 313px 313px;
+    text-align: center;
+    margin-top: 5%;
+}
 
 
 /* CONTEUDO DO FOOTER */
