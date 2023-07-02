@@ -11,6 +11,8 @@
     transition: all .2s linear;
 }
 
+/* HEADER */
+
 .hero {
     width: 100%;
     height: 85vh;
@@ -47,14 +49,47 @@ nav ul li {
     font-size: 17px;
 }
 
+nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+
 nav ul li:hover {
     background: transparent;
-    padding: 8px;
-    border-radius: 15px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #fff;
+    padding: 6px;
+    border-bottom: 3px solid #fff;
     color: #fff;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    padding: 15px;
+    padding-left: 20px;
+}
+
+.menu a:hover {
+    color: #003175;
+}
+
+.dropdown-menu {
+    position: absolute;
+    margin-top: 47%;
+    margin-left: -355%;
+    width: 500px;
+    height: 200px;
+    border-radius: 15px;
+    border: none;
+    display: none;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: black;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: inline-block;
 }
 
 /* CONTEÚDO DO HEADER */
@@ -166,7 +201,7 @@ nav ul li:hover {
 
 main {
     width: 100%;
-    height: 600vh;
+    height: 510vh;
     background-color: #fff;
     position: relative;
     padding: 0 5%;
@@ -211,7 +246,7 @@ p {
 .cartoes {
     display: grid;
     grid-template-columns: 18.6rem 18.6rem 18.6rem 18.6rem;
-    margin-bottom: -30px;
+    margin-bottom: -20px;
 }
 .card {
     margin-left: 27px;
@@ -251,6 +286,7 @@ h5 {
 .imagem-mediterraneo {
     margin-left: 20px;
     margin-top: 25px;
+    margin-top: 4%;
 }
 
 .imagem-mediterraneo img {
@@ -315,8 +351,18 @@ h5 {
     display: grid;
     grid-template-columns: 313px 313px 313px 313px;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 6%;
+    margin-bottom: 5%;
 }
+
+/*PACOTES ALL INCLUSIVE*/
+
+#pacotes-all-inclusive {
+    margin-bottom: 4%;
+}
+
+
+
 
 
 /* CONTEUDO DO FOOTER */
@@ -326,6 +372,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, auto));
     gap: 3.5rem;
+    border-top: 1px solid #003175;
 }
 
 .footer-content h4 {
