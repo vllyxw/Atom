@@ -15,6 +15,18 @@ body
     display: flex;
     font-family: 'Poppins', sans-serif;
     flex-direction: column;
+    color: #000000;
+}
+/* LINHA AZUL */
+#linha
+{
+    width: 100%;
+    height: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #003175;
+    margin: 20px;
 }
 /* BOX CONTEÚDO */
 .box
@@ -28,19 +40,52 @@ body
     width: auto;
     border-radius: 20px;
 }
-/* BOX CONTEÚDO IMAGEM*/
+/* BOX CONTEÚDO IMAGEM E DESCRIÇÂO*/
+.desc-img
+{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
 #img-box
 {
     border-radius: 20px;
     padding: 5px;
     width: 450px;
 }
-@media screen and (max-width: 930px) {
-    #img-box
-    {
-        width: auto;
-    }    
+h2
+{
+font-size: 15px;
 }
+.desc-cruzeiro
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+#txt-desc
+{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;text-align: center;
+}
+h1
+{
+    color: #003175;
+    font-size: 22px;
+}
+#txt-viagem
+{
+    width: auto;
+    height: auto;
+    padding: 5px;
+}
+@media screen and (max-width: 930px) {
+
+}
+/* BOX DADOS DA VIAGEM */
 
 
 /*NAVBAR INDEX3.HTML*/
