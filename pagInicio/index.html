@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <!--SCRIPTS-->
+  <script src="../pagInicio/js/script.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"
     integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -35,13 +36,55 @@
       <video autoplay loop muted plays-inline class="back-video">
         <source src="../videos/video.mp4" type="video/mp4">
       </video>
+       
 
+      <!--BARRA DE NAVEGAÇÃO-->
       <nav>
         <ul>
           <img src="../img/logoAtom.png" style="width: 110px;">
-          <li>Início</li>
-          <li>Destinos</li>
-          <li>Viajando com a Atom</li>
+          <li>
+           <a href="#">Início</a>
+          </li>
+          <li class="dropdown">
+            <a href="#">Destinos</a>
+            <div class="dropdown-menu">
+              <div class="menu">
+                <div class="menu-destinos">
+                  <a href="#">Mediterrâneo</a>
+                  <a href="#">Norte da Europa</a>
+                  <a href="#">Caribe</a>
+                  <a href="#">Dubai e Emirados Árabes</a>
+                  <a href="#">América do Sul</a>
+                  <a href="#">Travessias</a>
+                </div>
+                <div class="menus-volta-no-mundo">
+                  <a href="#">Volta ao mundo</a>
+                  <a href="#">Todos os países e região</a>
+                  <a href="#">Todos os portos</a>
+                  <a href="#">Temporada 23/24</a>
+                  <a href="#">Conexão Atom</a>
+                  <a href="#">Minicruzeiros</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href="#">Viajando com a Atom</a>
+              <div class="dropdown-atom">
+                <div class="menu">
+                  <div class="menu-cruzeiro-atom">
+                    <a href="#">Excursões</a>
+                    <a href="#">Restaurantes</a>
+                    <a href="#">Sustentabilidade</a>
+                    <a href="#">Diversão</a>
+                    <a href="#">Cabines</a>
+                    <a href="#">Esportes e bem-estar</a>
+                  </div>
+                </div>
+              </div>
+            </div></a>
+          </li>
           <li>Cruzeiros</li>
           <li>Promoções</li>
           <li>Entrar</li>
@@ -127,54 +170,66 @@
       <p>Cabine com varanda a preço de cabine externa ou de cabine interna*</p>
 
 
-      <div class="container text-center">
-        <div class="row">
-          <div class="col">
 
-            <div class="card" style="width: 18rem;">
-              <img src="../img/salvador-bahia.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h4 class="card-text">Roteiro dos sonhos para uma viagem de cruzeiro</h4>
-                <h5 class="card-text">Embarcando em Salvador</h5>
-                <p class="card-text">Data do embarque <br> 03 de junho de 2024</p>
-                <p class="card-text">Preço por pessoa</p>
-                <p class="card-text" id="precoPassagem">R$2.503</p>
-                <P class="card-text">Tarifas marítimas, taxas de serviço e portuárias inclusas</P>
-              </div>
+      <div class="cartoes">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="../img/salvador.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-text">Roteiro dos sonhos para uma viagem de cruzeiro</h4>
+              <h5 class="card-text">Embarcando em Salvador</h5>
+              <p class="card-text">Data do embarque <br> 03 de junho de 2024</p>
+              <p class="card-text">Preço por pessoa</p>
+              <p class="card-text" id="precoPassagem">R$2.503</p>
+              <P class="card-text">Tarifas marítimas, taxas de serviço e portuárias inclusas</P>
             </div>
           </div>
+        </div>
 
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-              <img src="../img/salvador-bahia.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h4 class="card-text">Um roteiro para férias inesquecíveis</h4>
-                <h5 class="card-text">Embarcando em Santos</h5>
-                <p class="card-text">Data do embarque <br> 11 de dezembro de 2023</p>
-                <p class="card-text">Preço por pessoa</p>
-                <p class="card-text" id="precoPassagem">R$2.164</p>
-                <P class="card-text">Tarifas marítimas, taxas de serviço e portuárias inclusas</P>
-              </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="../img/santos.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-text">Um roteiro para férias inesquecíveis</h4>
+              <h5 class="card-text">Embarcando em Santos</h5>
+              <p class="card-text">Data do embarque <br> 11 de dezembro de 2023</p>
+              <p class="card-text">Preço por pessoa</p>
+              <p class="card-text" id="precoPassagem">R$2.164</p>
+              <P class="card-text">Tarifas marítimas, taxas de serviço e portuárias inclusas</P>
             </div>
           </div>
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-              <img src="../img/salvador-bahia.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h4 class="card-text">Um roteiro para férias inesquecíveis</h4>
-                <h5 class="card-text">Embarcando em Santos</h5>
-                <p class="card-text">Data do embarque <br> 11 de dezembro de 2023</p>
-                <p class="card-text">Preço por pessoa</p>
-                <p class="card-text" id="precoPassagem">R$2.164</p>
-                <P class="card-text">Tarifas marítimas, taxas de serviço e portuárias inclusas</P>
-              </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="../img/salvador-bahia.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-text">Verão, sol, mar e muita diversão</h4>
+              <h5 class="card-text">Embarcando em Santos</h5>
+              <p class="card-text">Data do embarque <br> 11 de dezembro de 2023</p>
+              <p class="card-text">Preço por pessoa</p>
+              <p class="card-text" id="precoPassagem">R$2.164</p>
+              <P class="card-text">Tarifas marítimas, taxas de serviço e portuárias inclusas</P>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="../img/salvador-bahia.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-text">Verão, sol, mar e muita diversão</h4>
+              <h5 class="card-text">Embarcando em Santos</h5>
+              <p class="card-text">Data do embarque <br> 11 de dezembro de 2023</p>
+              <p class="card-text">Preço por pessoa</p>
+              <p class="card-text" id="precoPassagem">R$2.164</p>
+              <P class="card-text">Tarifas marítimas, taxas de serviço e portuárias inclusas</P>
             </div>
           </div>
         </div>
       </div>
+      </div>
 
       <h3>Destinos que todo mundo ama!</h3>
-      
+
       <div class="imagem-mediterraneo">
         <img src="../img/mediterraneo.jpg" width="1190px" height="400px">
         <h1>Mediterrâneo</h1>
@@ -182,21 +237,105 @@
 
       <div class="imagens-diversas">
         <div class="caribe">
-          <img src="../img/caribe.jpg" width="360px"> 
+          <img src="../img/caribe.jpg" width="390px" height="266px">
           <h1>Caribe</h1>
         </div>
         <div class="brasil">
-          <img src="../img/salvador-bahia.jpg" width="370px">
-        <h1>Brasil</h1>
+          <img src="../img/salvador-bahia.jpg" width="390px" height="266px">
+          <h1>Brasil</h1>
         </div>
         <div class="ilhas-gregas">
-          <img src="../img/ilhas gregas.jpg" width="390px">
-        <h1>Ilhas Gregas</h1>
+          <img src="../img/ilhas gregas.jpg" width="390px" height="266px">
+          <h1>Ilhas Gregas</h1>
         </div>
       </div>
-      
 
 
+      <h3>Incluso em todos os cruzeiros</h3>
+
+      <div class="incluso-cruzeiro">
+        <div class="icon-gastronomia">
+          <img src="../img/comida.png" alt="" width="128px">
+          <h5>O MELHOR DA GASTRONOMIA INTERNACIONAL</h5>
+          <p>Todas as refeições inclusas nos principais restaurantes
+            e nos buffets</p>
+        </div>
+        <div class="icon-entretenimento">
+          <img src="../img/teatro.png" alt="" width="128px">
+          <h5>ENTRETENIMENTO A BORDO</h5>
+          <p>Teatros ao estilo Broadway e shows de música ao vivo com uma line-up internacional de artistas</p>
+        </div>
+        <div class="icon-familia">
+          <img src="../img/familia-com-baloes.png" alt="" width="128px">
+          <h5>FAMILIAS E CRIANÇAS</h5>
+          <p>Entretenimento e atividades diárias para crianças e adolescentes de todas as faixas etárias
+          </p>
+        </div>
+        <div class="icon-piscina">
+          <img src="../img/natacao.png" alt="" width="128px">
+          <h5>INSTALAÇÕES DE ÚLTIMA GERAÇÂO</h5>
+          <p>Academia, piscinas e instalações esportivas com acesso gratuito</p>
+        </div>
+      </div>
+        
+      <h3 id="pacotes-all-inclusive">Pacotes de cruzeiro com passagem aérea</h3>
+
+      <div class="cartoes">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="../img/salvador.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-text">Roteiro dos sonhos para uma viagem de cruzeiro</h4>
+              <h5 class="card-text">Embarcando em Salvador</h5>
+              <p class="card-text">Data do embarque <br> 03 de junho de 2024</p>
+              <p class="card-text">Preço por pessoa</p>
+              <p class="card-text" id="precoPassagem">R$2.503</p>
+              <P class="card-text">Tarifas marítimas, taxas de serviço e portuárias inclusas</P>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="../img/santos.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-text">Um roteiro para férias inesquecíveis</h4>
+              <h5 class="card-text">Embarcando em Santos</h5>
+              <p class="card-text">Data do embarque <br> 11 de dezembro de 2023</p>
+              <p class="card-text">Preço por pessoa</p>
+              <p class="card-text" id="precoPassagem">R$2.164</p>
+              <P class="card-text">Tarifas marítimas, taxas de serviço e portuárias inclusas</P>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="../img/salvador-bahia.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-text">Verão, sol, mar e muita diversão</h4>
+              <h5 class="card-text">Embarcando em Santos</h5>
+              <p class="card-text">Data do embarque <br> 11 de dezembro de 2023</p>
+              <p class="card-text">Preço por pessoa</p>
+              <p class="card-text" id="precoPassagem">R$2.164</p>
+              <P class="card-text">Tarifas marítimas, taxas de serviço e portuárias inclusas</P>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="../img/salvador-bahia.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-text">Verão, sol, mar e muita diversão</h4>
+              <h5 class="card-text">Embarcando em Santos</h5>
+              <p class="card-text">Data do embarque <br> 11 de dezembro de 2023</p>
+              <p class="card-text">Preço por pessoa</p>
+              <p class="card-text" id="precoPassagem">R$2.164</p>
+              <P class="card-text">Tarifas marítimas, taxas de serviço e portuárias inclusas</P>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
 
 
 
@@ -209,13 +348,13 @@
 
 
 
-<!--RODAPÉ-->
- <footer>
+  <!--RODAPÉ-->
+  <footer>
     <div class="footer-content">
 
       <!--LOGO DA ATOM-->
       <img src="../img/logoAtom.png" width="160px">
-       
+
       <!--ÍCONES DAS REDES SOCIAIS-->
       <div class="icons">
         <a href="#"><i class="fa-brands fa-facebook" style="color: #003175;"></i></a>
@@ -225,7 +364,7 @@
       </div>
     </div>
 
-     <!--CONTEÚDO DO RODAPÉ-->
+    <!--CONTEÚDO DO RODAPÉ-->
     <div class="footer-content">
       <h4>A Companhia</h4>
       <li><a href="#">Sobre a Atom</a></li>
@@ -249,10 +388,8 @@
       <li><a href="#">Requisitos sanitários para viajar</a></li>
       <li><a href="#">Carta de direitos do passageiro</a></li>
     </div>
- </footer>
+  </footer>
 
-
-  <script src="../pagInicio/js/script.js"></script>
 
 </body>
 

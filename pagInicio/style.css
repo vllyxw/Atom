@@ -11,6 +11,8 @@
     transition: all .2s linear;
 }
 
+/* HEADER */
+
 .hero {
     width: 100%;
     height: 85vh;
@@ -23,6 +25,8 @@
 }
 
 /*BARRA DE NAVEGAÇÃO*/
+
+
 
 nav {
     width: 100%;
@@ -47,15 +51,73 @@ nav ul li {
     font-size: 17px;
 }
 
-nav ul li:hover {
-    background: transparent;
-    padding: 8px;
-    border-radius: 15px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #fff;
+nav li a {
+    text-decoration: none;
     color: #fff;
 }
+
+nav ul li:hover {
+    background: transparent;
+    border-bottom: 3px solid #003175;
+    transform: translateY(-5px);
+}
+
+/*DESTINOS*/
+
+.menu {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    padding: 15px;
+    padding-left: 20px;
+}
+
+.menu a:hover {
+    color: #003175;
+}
+
+.dropdown-menu {
+    position: absolute;
+    margin-top: 48%;
+    margin-left: -400%;
+    width: 500px;
+    height: 200px;
+    border-radius: 15px;
+    border: none;
+    display: none;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: black;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: inline-block;
+}
+
+/*VIAJANDO COM A ATOM*/
+
+.dropdown-atom {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: -126%;
+    width: 250px;
+    height: 200px;
+    border-radius: 15px;
+    background: #fff;
+    border: none;
+    display: none;
+}
+
+.dropdown-atom a {
+    display: block;
+    color: black;
+}
+
+.dropdown:hover .dropdown-atom {
+    display: inline-block;
+}
+
 
 /* CONTEÚDO DO HEADER */
 
@@ -166,7 +228,7 @@ nav ul li:hover {
 
 main {
     width: 100%;
-    height: 400vh;
+    height: 510vh;
     background-color: #fff;
     position: relative;
     padding: 0 5%;
@@ -187,10 +249,11 @@ p {
 /*CARROSSEL*/
 
 .carousel-inner {
-    width: 1100px;
+    width: 1178px;
     height: 500px;
     margin-top: 20px;
-    margin-left: 65px;
+    margin-left: 29px;
+    border-radius: 15px;
 }
 
 .carousel-inner img {
@@ -207,8 +270,22 @@ p {
 
 /*CARDS*/
 
+.cartoes {
+    display: grid;
+    grid-template-columns: 18.6rem 18.6rem 18.6rem 18.6rem;
+    margin-bottom: -20px;
+}
 .card {
-    margin-left: 67px;
+    margin-left: 27px;
+    border-radius: 15px;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 3px grey;
+}
+
+.card img {
+    border-radius: 15px 15px 0px 0px;
 }
 
 h4 {
@@ -236,6 +313,7 @@ h5 {
 .imagem-mediterraneo {
     margin-left: 20px;
     margin-top: 25px;
+    margin-top: 4%;
 }
 
 .imagem-mediterraneo img {
@@ -246,7 +324,7 @@ h5 {
 .imagem-mediterraneo h1 {
     color: #fff;
     font-weight: 600;
-    margin-left: 2%;
+    margin-left: 75%;
     margin-top: -60px;
     z-index: 2;
 }
@@ -256,13 +334,13 @@ h5 {
 }
 
 .imagens-diversas {
-    margin-top: 26px;
-    
+    margin-top: 28px;
+    margin-left: 22px;
     display: grid;
+    grid-template-columns: 400px 400px 400px;
 }
 
 .imagens-diversas img {
-    margin: px;
     border-radius: 15px;
 }
 
@@ -273,7 +351,7 @@ h5 {
 .caribe h1 {
     color: #fff;
     font-weight: 600;
-    margin-left: 21%;
+    margin-left: 61%;
     margin-top: -60px;
     z-index: 2;
 }
@@ -281,7 +359,7 @@ h5 {
 .brasil h1 {
     color: #fff;
     font-weight: 600;
-    margin-left: 20%;
+    margin-left: 65%;
     margin-top: -60px;
     z-index: 2;
 }
@@ -289,10 +367,27 @@ h5 {
 .ilhas-gregas h1 {
     color: #fff;
     font-weight: 600;
-    margin-left: 11%;
+    margin-left: 33%;
     margin-top: -60px;
     z-index: 2;
 }
+
+/*ÍCONES PARTES O QUE TEM TODO CRUZEIRO*/
+
+.incluso-cruzeiro {
+    display: grid;
+    grid-template-columns: 313px 313px 313px 313px;
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 5%;
+}
+
+/*PACOTES ALL INCLUSIVE*/
+
+#pacotes-all-inclusive {
+    margin-bottom: 4%;
+}
+
 
 
 
@@ -304,6 +399,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, auto));
     gap: 3.5rem;
+    border-top: 1px solid #003175;
 }
 
 .footer-content h4 {
