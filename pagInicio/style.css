@@ -32,7 +32,7 @@ nav {
     top: 0;
     left: 0;
     padding: 20px 8%;
-    display: flex;
+    display: inline-block;
     align-items: center;
     justify-content: space-between;
 }
@@ -271,7 +271,6 @@ p {
 .cartoes {
     display: grid;
     grid-template-columns: 18.6rem 18.6rem 18.6rem 18.6rem;
-    margin-bottom: -20px;
 }
 .card {
     margin-left: 27px;
