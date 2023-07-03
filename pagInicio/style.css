@@ -30,8 +30,7 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 20px 8%;
-    display: inline-block;
+    margin-left: 5%;
     align-items: center;
     justify-content: space-between;
 }
@@ -43,7 +42,7 @@ nav .logo {
 nav ul li {
     list-style: none;
     display: inline-block;
-    margin-left: 70px;
+    margin: 5%;
     color: #fff;
     font-size: 17px;
 }
