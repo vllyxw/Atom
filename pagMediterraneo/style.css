@@ -30,6 +30,7 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
+    margin-left: 5%;
     align-items: center;
     justify-content: space-between;
 }
@@ -41,7 +42,7 @@ nav .logo {
 nav ul li {
     list-style: none;
     display: inline-block;
-    margin: 6%;
+    margin: 5%;
     color: #fff;
     font-size: 17px;
 }
@@ -134,64 +135,126 @@ nav ul li:hover {
 }
 
 
-/* FORMULÁRIO DE PASSAGEM*/
+/*CORPO DA PÁGINA - MAIN*/
 
-.book-form {
-    width: 80%;
-    margin: 1rem auto;
-    background: #fff;
-    border-radius: 10px;
-    -webkit-box-shadow: 0 0.5rem rgba(17,17,17,0.3);
-    box-shadow: 0 0.5rem rgba(17,17,17,0.3);
-    padding: 1rem 1.5rem;
+main {
+    width: 100%;
+    height: 300vh;
+    position: relative;
+    padding: 0 5%;
+    margin-top: 4%;
+    align-items: center;
+    justify-content: center;
 }
 
-.book-form form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    
+main h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 3%;
+    text-align: left;
 }
 
-.book-form form .inputBox {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 7rem;
-    flex: 1 1 7rem;
-}
-
-.book-form form .inputBox span {
-    font-size: 15px;
+main p {
+    font-size: 22px;
+    text-align: left;
     color: grey;
 }
 
-.book-form form .inputBox input {
-    width: 180px;
-    padding: 0.6rem 0.6rem;
-    border-radius: 8px;
-    border: 1px solid #003175;
+main img {
+    border-radius: 15px;
+}
+
+/*CARDS*/
+
+h3 {
+    margin: 4% 0px 4% 0%;
+    font-weight: 600;
+}
+
+.cartoes {
+    display: grid;
+    grid-template-columns: 18.6rem 18.6rem 18.6rem 18.6rem;
+}
+.card {
+    
+    border-radius: 15px;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 3px grey;
+}
+
+.card img {
+    border-radius: 15px 15px 0px 0px;
+}
+
+h4 {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 17px;
+}
+
+.card-body p {
     font-size: 13px;
-    text-transform: capitalize;
-    background: none;
-    margin-top: 0.5rem;
 }
 
-.book-form form .btn {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 15rem;
-    flex: 1 1 4rem;
-    margin-left: 7px;
-    padding: 0.5rem 0.5rem;
-    background: #003175;
-    color: #fff;
+#precoPassagem {
+    font-size: 25px;
+    color: #0437F2;
+    margin-top: -10px;
 }
 
-.book-form form .btn:hover {
-    background: #fff;
-    border: 1px solid #003175;
-    color: #003175;
+
+/* CONTEUDO DO FOOTER */
+
+footer {
+    padding: 80px 13% 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    gap: 3.5rem;
+    border-top: 1px solid #003175;
+}
+
+.footer-content h4 {
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+}
+
+.footer-content li {
+    margin-bottom: 16px;
+    list-style: none;
+}
+
+.footer-content li a {
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all .40s ease;
+    text-decoration: none;
+    color: grey;
+}
+
+.footer-content li a:hover {
+    transform: translateY(-3px) translateX(-5px);
+    color: black;
+}
+
+.footer-content img {
+    margin-top: -25px;
+}
+
+
+.icons a {
+    display: inline-block;
+    font-size: 22px;
+    margin-right: 17px;
+    transition: all .40s ease;
+}
+
+.icons a:hover {
+    transform: translateY(-5px);
+    color: black;
 }
