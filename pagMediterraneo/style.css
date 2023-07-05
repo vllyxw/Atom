@@ -30,7 +30,6 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
-    margin-left: 5%;
     align-items: center;
     justify-content: space-between;
 }
@@ -42,7 +41,7 @@ nav .logo {
 nav ul li {
     list-style: none;
     display: inline-block;
-    margin: 5%;
+    margin: 5.5%;
     color: #fff;
     font-size: 17px;
 }
@@ -168,12 +167,14 @@ main img {
 
 h3 {
     margin: 4% 0px 4% 0%;
+    padding-left: 4%;
     font-weight: 600;
 }
 
 .cartoes {
     display: grid;
     grid-template-columns: 18.6rem 18.6rem 18.6rem 18.6rem;
+    padding-left: 3%;
 }
 .card {
     
