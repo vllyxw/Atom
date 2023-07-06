@@ -260,9 +260,10 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin: 10px 0px 30px 0px;
+    margin: 10px 30px 30px 0px;
     overflow: hidden;
 }
+
 .box-img {
     padding: 0px 0.5% 0px 0.5%;
 }
