@@ -2,6 +2,8 @@
 {
     padding: 0;
     margin: 0;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
 }
 body{
     background-color: #fafafa;
@@ -39,6 +41,7 @@ body{
     border-width: 1px;
     border-style: solid;
     border-color:  #cfcfcf;
+    border-radius: 15px;
     background-color: #fff;
     margin: 10px;
     display: flex;
@@ -120,8 +123,9 @@ form{
 {
     background-color: #003175;
     border: solid;
+    border-radius: 12px;
     width: 150px;
-    height: 40px;
+    height: 45px;
     color: #fff;
     align-items: center;
     justify-content: center;
@@ -130,7 +134,9 @@ form{
     margin: 10px;
 }
 .btn-salvar:hover{
-    background-color: #0247a7;
+    background: transparent;
+    border: 1px solid #003175;
+    color: #003175;
 }
 /* BOTÃO DE CONFIRMAR */
 .btn-confirmar{
@@ -143,13 +149,16 @@ form{
 }
 .btn-confirmar-2{
     background-color: #003175;
+    border-radius: 12px;
     border: solid;
     width: 100%;
-    height: 40px;
+    height: 45px;
     color: #fff;
 }
-.btn-confirmar:hover{
-    background-color: #0247a7;
+.btn-confirmar-2:hover {
+    background: #fff;
+    border: 1px solid #003175;
+    color: #003175;
 }
 /* BOX INFORMATIVO DA DIREITA (SEU CARRINHO) */
 #txt-carrinho
@@ -163,8 +172,10 @@ form{
     border-width: 1px;
     border-style: solid;
     border-color:  #cfcfcf;
+    border-radius: 15px;
     background-color: #fff;
     margin-top: 20px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -196,6 +207,7 @@ form{
     border-width: 1px;
     border-style: solid;
     border-color:  #cfcfcf;
+    border-radius: 15px;
     background-color: #fff;
     margin: 10px;
     display: flex;
@@ -219,10 +231,11 @@ form{
 {
     cursor: pointer;
     width: 150px;
-    height: 80px;
+    height: 85px;
     border-width: 1px;
     border-style: solid;
     border-color:  #cfcfcf;
+    border-radius: 15px;
     display: flex;
     margin: 10px;
     flex-direction: column;
